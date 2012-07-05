@@ -1,0 +1,11 @@
+<p>I find myself turning to <a href='http://apidock.com/ruby/Enumerable/inject'>Enumberable#inject</a> more and more. It is such a powerful method, yet I rarely see it used in others&#8217; code. Here are a couple of examples of the power of inject.</p>
+
+<p>h2. Adding Facorial to All Integers</p>
+
+<p>&#8221;&#8216;ruby class Integer def factorial raise &#8216;Cannot take a factorial of a negative number&#8217; if self &lt; 0 return 1 if self == 0 (1..self).inject { |total, element| total * element } end end &#8221;&#8217;</p>
+
+<p>h2. Removing Touching Matching Elements in an Array Until No Touching Elements Match( thanks Eric )</p>
+
+<p>&#8221;&#8216;ruby class Array def remove_touchers self.inject(<span />) { |final, element| final<span>-1</span> == element ? final<span>0..-2</span> : final &#171;&#160;element } end end &#8221;&#8217;</p>
+
+<p>So, why aren&#8217;t there more people using this method? Is it just forgotten? Are you using <a href='http://apidock.com/ruby/Enumerable/inject'>Enumberable#inject</a>? How are you using it?</p>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body>
+    <div id='site' class="container">
+      <div id='header' class="page-header row">
+        <h1 id="title" class="span8"><a href="{{ site.base_url }}">TheCoffeeDates</a></h1>
+        <a href="mailto:thecoffeedatesdesk@gmail.com?subject=The%20Coffee%20Dates" class="btn btn-info pull-right" title="Email Us">
+          <i class="icon-envelope icon-white"></i>
+        </a>
+        <div class="row span12">
+          <small>
+            We would like to invite you to share in our experience in the search for the greatest coffee we
+            can agree on.
+          </small>
+        </div>
+      </div>
+
+      {{content}}
+
+      <div id="footer" class="row span4 offset4">
+        <p id="copyright" class="span3">
+          Copyright <time>2012<time>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

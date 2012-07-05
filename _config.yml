@@ -1,0 +1,8 @@
+base_url: /
+pygments: false
+future: false
+lsi: false
+permalink: /blog/:year/:month/:day/:title
+paginate: 1
+url: http://thecoffeedates.com
+
